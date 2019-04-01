@@ -1,0 +1,45 @@
+<div class="col-md-12">
+  <h2 align="center">Übersicht aller KleinAnzeigen</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Preis</th>
+      <th>Erstellungsdatum</th>
+      <th>Status</th>
+      <th>Verkaufer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td >{{kleinAnzeige.id}}</td>
+      <td>{{kleinAnzeige.title}}</td>
+      <td>{{kleinAnzeige.beschreibungsText}}</td>
+      <td>{{kleinAnzeige.preis}} Euro </td>
+      <td> Seit: {{kleinAnzeige.datum}}</td>
+      <td>{{kleinAnzeige.status}}</td>
+      <td>{{kleinAnzeige.verkaufer}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div></div>
+  <ng-container #content>
+    <button class="btn btn-danger" >Delete</button>
+    <button class="btn btn-success" >kaufen</button>
+  </ng-container >
+  <ng-template #other_content>
+  <button class="btn btn-warning" routerLink="kleinAnzeiges/addNewAnzeige">Editieren</button>
+  </ng-template>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <P>Kommentar:</P>
+
+</div>

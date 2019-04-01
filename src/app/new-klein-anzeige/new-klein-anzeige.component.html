@@ -1,0 +1,40 @@
+<span class="glyphicon">&#xe039;</span>
+
+<div class="col-md-6" >
+
+  <h2 class="text-center">Anzeige Erstellen</h2>
+
+  <form>
+
+    <!--Title-->
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text"  placeholder="title" name="title" class="form-control" id="title" ngModel>
+    </div>
+
+    <!--Kategorie-->
+
+    <div class="checkbox">
+      <p>Kategorie</p>
+      <label><input type="checkbox"> Digitale Waren</label>
+      <label><input type="checkbox"> Haus & Garten </label>
+      <label><input type="checkbox"> Mode & Kosmetik</label>
+      <label><input type="checkbox"> Multimedia & Elektonik</label>
+    </div>
+
+    <!--Preis-->
+    <div class="form-group">
+      <label for="preis">Preis:</label>
+      <input type="text" placeholder="Vorname" name="firstName" class="form-control" id="preis" ngModel>
+    </div>
+
+    <!-- Commentar-->
+    <div class="form-group">
+      <label for="comment">Text:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Erstellen</button>
+  </form>
+</div>
+

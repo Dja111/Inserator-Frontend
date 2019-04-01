@@ -1,0 +1,29 @@
+<div>
+  <nav class="navbar navbar-inverse" style="margin-left: 200px; margin-right: 200px">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">InseratorFrontend</a>
+      </div>
+      <ul class="nav navbar-nav" style="margin-left: 180px">
+        <li class="active"><a routerLink="/">Home</a></li>
+        <li><a routerLink="kleinAnzeiges/addNewAnzeige">AddNewAnzeige</a></li>
+        <li><a routerLink="kleinAnzeiges/update/:id">UpdateKleinAnzeige</a></li>
+        <li><a routerLink="privateNachricht">PrivateNachricht</a></li>
+        <li><a routerLink="benutzers/benutzerSicht">UserÜbersicht</a></li>
+        <li><a routerLink="benutzers/add">AddNewUser</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MyBenutzer
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Benutzer1</a></li>
+            <li><a href="#">Benutzer2</a></li>
+            <li><a href="#">Benutzer3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+</div>

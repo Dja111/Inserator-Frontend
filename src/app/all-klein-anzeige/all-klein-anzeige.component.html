@@ -1,0 +1,34 @@
+<div class="col-md-12">
+
+<h3 align="right">Welkomme Herr k.ralf</h3>
+<h2 align="center">Übersicht aller KleinAnzeigen</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Title</th>
+    <th>Text</th>
+    <th>Preis</th>
+    <th>Erstellungsdatum</th>
+    <th>Status</th>
+    <th>Verkaufer</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let KleinAnzeige of Liste" class="success">
+    <td >{{KleinAnzeige.id}}</td>
+    <td>{{KleinAnzeige.title}}</td>
+    <td><a routerLink="kleinAnzeiges/update/{{KleinAnzeige.id}}">{{KleinAnzeige.beschreibungsText}}</a></td>
+    <td>{{KleinAnzeige.preis}} Euro </td>
+    <td> Seit: {{KleinAnzeige.datum}}</td>
+    <td>{{KleinAnzeige.status}}</td>
+    <td><a routerLink="benutzers/benutzerSicht/{{KleinAnzeige.verkaufer}}">{{KleinAnzeige.verkaufer}}</a></td>
+  </tr>
+  </tbody>
+</table>
+
+  <button class="btn btn-info" routerLink="kleinAnzeiges/addNewAnzeige">Neue Kleinanzeige erstellen </button>
+
+
+</div>
